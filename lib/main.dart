@@ -9,84 +9,113 @@ class XylophoneApp extends StatelessWidget {
   const XylophoneApp({super.key});
   void playSound(int soundNumber) {
     final player = AudioPlayer();
-    player.play(AssetSource('note1.wav'));
+    player.play(AssetSource('note$soundNumber.wav'));
   }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.black,
         body: SafeArea(
             child: Column(
           children: [
-            TextButton(
-              onPressed: () {
-                playSound(1);
-              },
-              child: Container(
-                color: Colors.red,
-                height: 40,
-                width: 100,
+            Expanded(
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.red,
+                  shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.zero,
+                  ),
+                ),
+                onPressed: () {
+                  playSound(1);
+                },
+                child: Container(),
               ),
             ),
-            TextButton(
-              onPressed: () {
-                playSound(2);
-              },
-              child: Container(
-                color: Colors.orange,
-                height: 40,
-                width: 100,
+            Expanded(
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.orange,
+                  shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.zero,
+                  ),
+                ),
+                onPressed: () {
+                  playSound(2);
+                },
+                child: Container(),
               ),
             ),
-            TextButton(
-              onPressed: () {
-                playSound(3);
-              },
-              child: Container(
-                color: Colors.yellow,
-                height: 40,
-                width: 100,
+            Expanded(
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.yellow,
+                  shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.zero,
+                  ),
+                ),
+                onPressed: () {
+                  playSound(3);
+                },
+                child: Container(),
               ),
             ),
-            TextButton(
-              onPressed: () {
-                playSound(4);
-              },
-              child: Container(
-                color: Colors.green,
-                height: 40,
-                width: 100,
+            Expanded(
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.green,
+                  shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.zero,
+                  ),
+                ),
+                onPressed: () {
+                  playSound(4);
+                },
+                child: Container(),
               ),
             ),
-            TextButton(
-              onPressed: () {
-                playSound(5);
-              },
-              child: Container(
-                color: Colors.blue,
-                height: 40,
-                width: 100,
+            Expanded(
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.blue,
+                  shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.zero,
+                  ),
+                ),
+                onPressed: () {
+                  playSound(5);
+                },
+                child: Container(),
               ),
             ),
-            TextButton(
-              onPressed: () {
-                playSound(6);
-              },
-              child: Container(
-                color: Colors.indigo,
-                height: 40,
-                width: 100,
+            Expanded(
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.indigo,
+                  shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.zero,
+                  ),
+                ),
+                onPressed: () {
+                  playSound(6);
+                },
+                child: Container(),
               ),
             ),
-            TextButton(
-              onPressed: () {
-                playSound(7);
-              },
-              child: Container(
-                color: Colors.purple,
-                height: 40,
-                width: 100,
+            Expanded(
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.purple,
+                  shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.zero,
+                  ),
+                ),
+                onPressed: () {
+                  playSound(7);
+                },
+                child: Container(),
               ),
             ),
           ],
